@@ -3,7 +3,7 @@
 const int LED_PIN = 27; 
 const int TOUCH_PIN = 32; 
 int counter = 0;
-bool isLEDOn = false;
+bool isSensorTouched = false;
 
 void setup() {
   // put your setup code here, to run once:
@@ -20,16 +20,10 @@ void loop() {
   Serial.print("0,2000");
   Serial.print(",");
   Serial.println(sensedValue);
-  delay(10);
-
-  if (senseValue <= TOUCH_ACTIVATED_VALUE) {
-    // flip LED state
-    isLEDOn = !isLEDOn;
-  }
   
-  // // Toggle LED
-  // digitalWrite(LED_PIN, HIGH);
-  // delay(100);
-  // digitalWrite(LED_PIN, LOW);
-  // delay(100);
+  isSensorTouched = (sensedValue <= TOUCH_ACTIVATED_VALUE) ? true : false;
+
+  // Update LED State
+  digitalWrite(LED_PIN, (isSensorTouched) ? HIGH : LOW);
+  delay(10);
 }
