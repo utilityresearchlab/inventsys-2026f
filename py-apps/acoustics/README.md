@@ -1,4 +1,4 @@
-# P5 Python Setup
+# Python Setup
 
 ## Setup the Virtual Env
 1. From the directory of this folder, create a virtual env using: `python3 -m venv env`
