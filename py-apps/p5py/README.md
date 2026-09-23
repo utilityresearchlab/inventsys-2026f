@@ -8,7 +8,8 @@
 
 ## Running the script 
 1. Activate the virtual environment:  
- - On Mac: `source env/bin/activate`
+    - On Mac: `source env/bin/activate`. 
+    - On Windows: `./env/Scripts/activate.bat`
 2. Run the script:
         `python example.py `
         
