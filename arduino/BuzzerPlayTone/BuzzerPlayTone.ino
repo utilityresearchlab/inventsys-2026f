@@ -13,5 +13,4 @@ void loop() {
   // Stop sound
   noTone(BUZZER_PIN);
   delay(500);
-
 }
