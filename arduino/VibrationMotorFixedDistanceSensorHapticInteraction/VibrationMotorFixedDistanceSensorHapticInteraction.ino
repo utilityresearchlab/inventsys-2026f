@@ -7,7 +7,7 @@
  *  - HC-SR04  Echo Pin GPIO_21 
       THE ECHO NEEDS A VOLTAGE DIVIDE TO DROP 5V to 3V3 for the ESP32
           ECHO -> 1kOhm resistor --> 2k Ohm --> GND
-                        |--> GPIO_21
+                                 |--> GPIO_21
  *  - L239D Enable A: GPIO_13
  *  - L239D in1: GPIO_12
  *  - L239D in2: GPIO_14

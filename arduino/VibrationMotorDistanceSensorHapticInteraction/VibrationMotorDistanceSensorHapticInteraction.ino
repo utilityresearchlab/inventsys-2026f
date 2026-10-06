@@ -2,9 +2,12 @@
  * Reads the distance from an HC-SR04 ultrasonic distance sensor, and based on the 
  * DISTANCE_SENSE_MIN and DISTANCE_SENSE_MAX, maps to vibration on a motor using the
  * L239D driver with a 3V3 eccentric rotating mass (ERM) vibration motor.
- * Pins:
- *  - HC-SR04 Trigger Pin GPIO_34 
- *  - HC-SR04  Echo Pin GPIO_35 
+* Pins:
+ *  - HC-SR04 Trigger Pin GPIO_19 
+ *  - HC-SR04  Echo Pin GPIO_21 
+      THE ECHO NEEDS A VOLTAGE DIVIDE TO DROP 5V to 3V3 for the ESP32
+          ECHO -> 1kOhm resistor --> 2k Ohm --> GND
+                        |--> GPIO_21
  *  - L239D Enable A: GPIO_13
  *  - L239D in1: GPIO_12
  *  - L239D in2: GPIO_14

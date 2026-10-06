@@ -1,7 +1,7 @@
 /**
     An ESP32 Capacitive touch sensor using touchRead. Upon touch activation (or close hovering)
     the vibration motor is triggered as haptic feedback. The motot should be tapes to the tip of one's
-    finger that is approaching the capacitive sensor electrode for the best effect.
+    finger that is approaching the capacitive sensor electrode for the best effect.z
       
     SENSE: GPIO Pin used to detect the voltage
     * Pins:
